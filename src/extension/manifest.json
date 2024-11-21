@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Job Application Autofill",
+  "version": "1.0",
+  "description": "Automatically fill job application forms using saved profile data.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_title": "Autofill Job Application",
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["<all_urls>"]
+}
